@@ -13,9 +13,21 @@
   --clr-text-body: hsl(225, 40%, 83%);
   --clr-accent: hsl(157, 74%, 62%);
   --clr-accent-hover: #B3FFE2;
-
 }
 
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+html {
   font-family: var(--ff-main);
 }
+
