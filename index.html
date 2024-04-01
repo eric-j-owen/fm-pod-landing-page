@@ -10,14 +10,29 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
+  <script src="./script.js" defer></script>
 </head>
 <body>
-  Publish your podcasts everywhere.
-
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
-
-  Request access
+  <header><img src="./assets/desktop/logo.svg" alt=""></header>
+  <main>
+    <div class="card">
+      <h1><span class="accent">Publish your podcasts</span><br>everywhere.</h1>
+      <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+        <div class="podcasts-images-wrapper">
+          <img src="./assets/desktop/spotify.svg" alt="">
+          <img src="./assets/desktop/apple-podcast.svg" alt="">
+          <img src="./assets/desktop/google-podcasts.svg" alt="">
+          <img src="./assets/desktop/pocket-casts.svg" alt="">
+        </div>
+        <form>
+          <label>
+            <input type="email" placeholder="Email address">
+          </label>
+        <button>Request access</button>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
