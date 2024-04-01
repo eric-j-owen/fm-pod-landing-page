@@ -1,0 +1,21 @@
+:root {
+  --ff-main: chivo, sans-serif;
+
+  --fs-title: 3.25rem;
+  --fs-body: 1.125rem;
+
+  --lh-title: 1.1923;
+  --lh-body: 3.444;
+
+  --clr-bg-primary: hsl(224, 35%, 11%);
+  --clr-bg-secondary: hsl(225, 26%, 23%);
+  --clr-text-main: hsl(0, 0%, 100%);
+  --clr-text-body: hsl(225, 40%, 83%);
+  --clr-accent: hsl(157, 74%, 62%);
+  --clr-accent-hover: #B3FFE2;
+
+}
+
+body {
+  font-family: var(--ff-main);
+}
