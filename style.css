@@ -51,6 +51,7 @@ html {
 }
 body {
   min-height: 100vh;
+  max-width: 1400px;
   background: linear-gradient(rgba(var(--clr-grad), 0.9), rgba(var(--clr-grad), 0.9)),url(./assets/mobile/image-host.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,7 +146,7 @@ button:hover {
     background-color: var(--clr-bg-primary);
     background-image: linear-gradient(rgba(var(--clr-grad), 0.3), rgba(var(--clr-grad), 0.3)),url(./assets/tablet/image-host.jpg);
     background-position: top right;
-    background-size: 65%;
+    background-size: auto;
   }
   .card {
     background-color: var(--clr-bg-primary);
@@ -198,5 +199,18 @@ button:hover {
     bottom: -3rem;
     position: absolute;
     z-index: -1;
+  }
+}
+
+@media (min-width: 1440px){
+  body  {
+    background-color: var(--clr-bg-primary);
+    background-image: linear-gradient(rgba(var(--clr-grad), 0.3), rgba(var(--clr-grad), 0.3)),url(./assets/desktop/image-host.jpg);
+    background-position: top right;
+  }
+
+  .dots {
+    top: 36rem;
+    left: 70rem;
   }
 }
