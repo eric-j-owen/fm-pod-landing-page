@@ -38,6 +38,11 @@ span {
   font-weight: 300;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 html {
   font-family: var(--ff-main);
 }
@@ -82,22 +87,18 @@ p {
 }
 
 .podcasts-images-wrapper {
-  max-width: 315px;
-  display: flex;
-  justify-content: space-between;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-
-}
-.podcasts-images-wrapper > * {
-  display: block;
-  width: 100%;
-  flex-basis: 55px;
+  margin-inline: 2rem;
+  gap: 2rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%; 
+  max-width: 450px; 
   gap: 1rem;
   margin-block: 2rem;
 }
@@ -117,6 +118,9 @@ input {
 
 .error {
   color: #FB3E3E;
+  width: 90%;
+  display: block;
+  margin-inline: auto;
 }
 
 button {
