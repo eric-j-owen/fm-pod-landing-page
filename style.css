@@ -97,14 +97,14 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  max-width: 100%; 
+  width: 100%; 
   gap: 1rem;
   margin-block: 2rem;
 }
 
 input,
 button {
-  width: 100%;
+  width: 90%;
   align-self: center;
   border-radius: 20px; 
   min-height: 3rem;
@@ -113,6 +113,10 @@ button {
 input {
   padding-inline: 2rem;
   font: inherit;
+}
+
+.error {
+  color: #FB3E3E;
 }
 
 button {
