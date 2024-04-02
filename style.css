@@ -38,6 +38,9 @@ span {
   font-weight: 300;
 }
 
+.dots {
+  display: none;
+}
 img {
   display: block;
   width: 100%;
@@ -98,22 +101,24 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  max-width: 450px; 
   gap: 1rem;
   margin-block: 2rem;
 }
 
 input,
 button {
-  width: 90%;
+  width: 100%;
   align-self: center;
   border-radius: 20px; 
   min-height: 3rem;
 } 
 
 input {
+  background-color:#2C344B;
+  color: var(--clr-text-body);
   padding-inline: 2rem;
   font: inherit;
+  border: none;;
 }
 
 .error {
@@ -133,4 +138,65 @@ button {
 
 button:hover {
   background-color: var(--clr-accent-hover);
+}
+
+@media (min-width: 768px){
+  body  {
+    background-color: var(--clr-bg-primary);
+    background-image: linear-gradient(rgba(var(--clr-grad), 0.3), rgba(var(--clr-grad), 0.3)),url(./assets/tablet/image-host.jpg);
+    background-position: top right;
+    background-size: 65%;
+  }
+  .card {
+    background-color: var(--clr-bg-primary);
+    text-align: left;
+    max-width: 655px;
+    align-items: flex-start;
+    padding-top: 3rem;
+    margin-left: 3rem;
+  }
+
+  p {
+    max-width: 45ch;
+  }
+
+  header {
+    width: 100%;
+  }
+  header img{
+    width: 200px;
+    margin: 0 auto 0 2rem;
+  }
+
+  .podcasts-images-wrapper {
+    order: 2;
+  }
+
+  form {
+    order: 1;
+    flex-direction: row;
+  }
+  .c {
+    position: relative;
+  }
+  input {
+    width: 400px;
+    min-height: 3.5rem;
+  }
+  button {
+    width: 12.7rem;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    max-height: 3rem;
+    padding: .8rem;
+  }
+
+  .dots {
+    display: block;
+    width: 300px;
+    bottom: -3rem;
+    position: absolute;
+    z-index: -1;
+  }
 }
